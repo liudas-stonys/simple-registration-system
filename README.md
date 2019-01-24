@@ -1,2 +1,2 @@
-"# simple_registration_system" 
-"# simple_registration_system" 
+## Simple user registration system
+Exercise for the job interview
