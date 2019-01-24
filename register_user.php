@@ -12,6 +12,7 @@
         $result = mysqli_query($db, $user_check_query);
         $user = mysqli_fetch_assoc($result);
 
+        // If user is unique, add database entry
         if ($user) {
             echo "\nError! User {$first_name} {$last_name} already exists. Please try again.\n";
         } else {
