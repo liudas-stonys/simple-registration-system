@@ -8,7 +8,7 @@
         include("get_user_info.php");
 
         // Check if user is unique by first and last names
-        $user_check_query = "SELECT * FROM user WHERE first_name='$first_name' or last_name='$last_name' LIMIT 1";
+        $user_check_query = "SELECT * FROM user WHERE first_name='$first_name' and last_name='$last_name' LIMIT 1";
         $result = mysqli_query($db, $user_check_query);
         $user = mysqli_fetch_assoc($result);
 
